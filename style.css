@@ -1,0 +1,172 @@
+body {
+  text-align: center;
+}
+
+/* title */
+#title > div {
+  background-color: #03346e;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #e2e2b6;
+  flex-basis: 100px;
+  margin: 0;
+  width: 300px;
+}
+#title h2 {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: #6eacda;
+  font-size: 2rem;
+  text-align: left;
+  margin: 0;
+  width: 300px;
+}
+
+/* hero */
+#hero > div {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#hero h2 {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  color: #e2e2b6;
+  font-size: 4.5rem;
+}
+#hero p {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #03346e;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#hero img {
+  clip-path: circle(35% at 50% 38%);
+  height: 300px;
+  width: 200px;
+  margin-top: 7%;
+}
+
+/* resume */
+#resume > div {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#resume > div > div {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+#resume img {
+  flex: 0.5;
+}
+.article {
+  flex: 1.5;
+}
+h3 {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  color: #e2e2b6;
+  font-size: 3rem;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+#resume p {
+  font-size: 1.5rem;
+  color: #03346e;
+  text-align: justify;
+  margin-top: 5px;
+}
+
+/* contact */
+#contact > div {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #e2e2b6;
+}
+#contact > div * {
+  margin-left: 2rem;
+}
+#contact h2 {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  color: #03346e;
+  font-size: 4rem;
+}
+#contact p {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #03346e;
+}
+.btn {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  background-color: #6eacda;
+  border: none;
+  color: #03346e;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  /* title */
+  /* hero */
+  #hero h2 {
+    margin: 0;
+  }
+  #hero p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  #hero img {
+    margin: 0;
+  }
+
+  /* resume */
+  #resume img {
+    width: 100px;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  #resume > div > div {
+    flex-direction: column;
+    width: 80%;
+    gap: 0;
+  }
+  #resume p {
+    font-size: 1.2rem;
+  }
+  .resume-img {
+    text-align: left;
+  }
+
+  /* contact */
+}
