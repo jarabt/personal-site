@@ -16,6 +16,16 @@ for (let i = 10; i > 0; i--) {
         ></rect>
       </svg>`;
   $("#title").prepend(blueSquareSvg_ne);
+  //animation
+  const selector = `#northEasternBlueSquare${i} > rect`;
+  $(selector).on("mouseover", () => {
+    $(selector).toggleClass("originalFill");
+    $(selector).toggleClass("mouseOverRect");
+    setTimeout(() => {
+      $(selector).toggleClass("originalFill");
+      $(selector).toggleClass("mouseOverRect");
+    }, 200);
+  });
 }
 
 //South-western blue square group
@@ -36,15 +46,14 @@ for (let i = 6; i > 0; i--) {
         ></rect>
       </svg>`;
   $("#title").prepend(blueSquareSvg_sw);
+  //animation
+  const selector = `#southWesternBlueSquare${i} > rect`;
+  $(selector).on("mouseover", () => {
+    $(selector).toggleClass("originalFill");
+    $(selector).toggleClass("mouseOverRect");
+    setTimeout(() => {
+      $(selector).toggleClass("originalFill");
+      $(selector).toggleClass("mouseOverRect");
+    }, 200);
+  });
 }
-
-//mouse-over blue rects animation
-const blueRects = $("#title rect");
-blueRects.on("mouseover", () => {
-  blueRects.toggleClass("originalFill");
-  blueRects.toggleClass("mouseOverRect");
-  setTimeout(() => {
-    blueRects.toggleClass("originalFill");
-    blueRects.toggleClass("mouseOverRect");
-  }, 100);
-});
