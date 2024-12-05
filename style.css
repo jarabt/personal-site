@@ -37,7 +37,7 @@ h1 {
   font-weight: 400;
   font-size: 1.5rem;
   color: #6eacda;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 #chosenLanguage {
@@ -50,6 +50,10 @@ h1 {
   position: absolute;
   top: 12vh;
   left: 15%;
+}
+
+#secondLanguage > a:hover {
+  text-decoration: underline;
 }
 
 #southWesternBlueSquare1 {
